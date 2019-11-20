@@ -35,3 +35,29 @@ For example:
 - dbname: `magento`
 - username: `root`
 - password: `password`
+
+
+# Magento slider extension for Bonsai hackathon
+
+This extension allow users to add many sliders on any page using simple block.
+
+It uses Slick JS slider with various types of animation, sliders position, visible by store for multi store websites, and much more.
+
+How to manage banners:
+- Please go to Admin panel > Content > Banners
+- Create new banner by clicking on "Add New Banners" button
+- Type the name of the banner and create a new banner element in the wysiwyg editor, you can use html or simple image.
+
+How to manage sliders:
+- Please go to Admin panel > Content > Sliders
+- Create a new banner by clicking on "Add New Slider" button
+- Fill form fields and choose proper options based on your needs
+- On the left side Banners tab you can choose banners which should be showed in the current slider
+
+How to display slider on cms pages:
+- Please go to the Admin Panel > Content > Pages and choose page which you would like to edit
+- Place this shortcut in content section `{{block class="Bonsai\Slider\Block\Slider" template="Bonsai_Slider::slider.phtml" slider_id="1"}}` where slider_id should equal to the slider id from Admin panel > Content > Sliders
+- If you would like to use in in your theme - you should place this block based on your layout file (this step is more for developers): 
+`<block class="Bonsai\Slider\Block\Slider" name="bonsai_slider" template="Bonsai_Slider::slider.phtml" slider_id="1" />`
+
+More settings for slider effects and other improvements coming soon
