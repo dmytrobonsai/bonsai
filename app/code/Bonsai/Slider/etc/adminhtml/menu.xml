@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Bonsai_Slider::slider_elements" title="Bonsai Slider" module="Bonsai_Slider" sortOrder="100" resource="Bonsai_Slider::slider_elements" parent="Magento_Backend::content"/>
+        <add id="Bonsai_Slider::banner" title="Banners" module="Bonsai_Slider" sortOrder="10" action="bonsai_slider/banner" resource="Bonsai_Slider::banner" parent="Bonsai_Slider::slider_elements"/>
+        <add id="Bonsai_Slider::slider" title="Sliders" module="Bonsai_Slider" sortOrder="20" action="bonsai_slider/slider" resource="Bonsai_Slider::slider" parent="Bonsai_Slider::slider_elements"/>
+    </menu>
+</config>
